@@ -12,6 +12,7 @@ body {
   --body-size: 18px;
   --caption-size: 16px;
   --header-size: 22px;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -31,6 +32,19 @@ h3, h4, h5, h6 {
 @media (min-width: 600px) {
   body {
     padding: 0 32px;
+  }
+}
+
+@media (max-width: 900px) {
+  .desktop-nav {
+    display: none !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .about-avatar {
+    width: 240px !important;
+    height: 240px !important;
   }
 }
 

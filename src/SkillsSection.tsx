@@ -100,7 +100,7 @@ const SkillsSection = () => {
       <div style={{ color: '#666', fontSize: 'var(--caption-size)', marginBottom: 48, textAlign: 'center', fontFamily }}>My technical & other skills</div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 36, alignItems: 'center', marginBottom: 36 }}>
         {[0, 2, 4].map(rowStart => (
-          <div key={rowStart} style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', gap: 40, flexWrap: 'wrap' }}>
+          <div key={rowStart} style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', gap: '4cm', flexWrap: 'wrap' }}>
             {skillsData.slice(rowStart, rowStart + 2).map((cat, idx) => {
               const globalIdx = rowStart + idx;
               return (

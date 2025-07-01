@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import NeuralNetworkBackground from './NeuralNetworkBackground';
 import AboutSection from './AboutSection';
 import SkillsSection from './SkillsSection';
 import ProjectsSection from './ProjectsSection';
 import TechnicalCapabilitiesSection from './TechnicalCapabilitiesSection';
+import ContactSection from './ContactSection';
+import Footer from './Footer';
 import githubGif from './github.gif';
 import kagglePng from './kaggle.png';
 import linkedinGif from './linkedin.gif';
@@ -24,6 +26,37 @@ const navLinkStyle: React.CSSProperties = {
 };
 
 function App() {
+  const titles = [
+    'Junior Data Scientist',
+    'Data Analyst',
+  ];
+  const [titleIndex, setTitleIndex] = useState(0);
+  const [displayed, setDisplayed] = useState('');
+  const [typing, setTyping] = useState(true);
+
+  useEffect(() => {
+    let timeout: NodeJS.Timeout;
+    if (typing) {
+      if (displayed.length < titles[titleIndex].length) {
+        timeout = setTimeout(() => {
+          setDisplayed(titles[titleIndex].slice(0, displayed.length + 1));
+        }, 70);
+      } else {
+        timeout = setTimeout(() => setTyping(false), 1200);
+      }
+    } else {
+      if (displayed.length > 0) {
+        timeout = setTimeout(() => {
+          setDisplayed(displayed.slice(0, -1));
+        }, 30);
+      } else {
+        setTyping(true);
+        setTitleIndex((titleIndex + 1) % titles.length);
+      }
+    }
+    return () => clearTimeout(timeout);
+  }, [displayed, typing, titleIndex, titles]);
+
   return (
     <>
       <NeuralNetworkBackground />
@@ -58,6 +91,7 @@ function App() {
           <img src={aiLogo} alt="AI Logo" style={{ width: 32, height: 32, objectFit: 'contain', verticalAlign: 'middle' }} /> Ritesh
         </div>
         <ul
+          className="desktop-nav"
           style={{
             listStyle: 'none',
             display: 'flex',
@@ -106,7 +140,7 @@ function App() {
             color: '#222',
             fontFamily,
           }}>
-            I'm a <span style={{ color: '#00bcd4', fontWeight: 600 }}>Machine Learning Engineer</span>
+            I'm a <span style={{ color: '#00bcd4', fontWeight: 600 }}>{displayed}&nbsp;</span>
           </p>
           <p style={{
             color: '#555',
@@ -182,6 +216,8 @@ function App() {
         <SkillsSection />
         <ProjectsSection />
         <TechnicalCapabilitiesSection />
+        <ContactSection />
+        <Footer />
       </main>
     </>
   );
