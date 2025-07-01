@@ -4,6 +4,10 @@ import AboutSection from './AboutSection';
 import SkillsSection from './SkillsSection';
 import ProjectsSection from './ProjectsSection';
 import TechnicalCapabilitiesSection from './TechnicalCapabilitiesSection';
+import githubGif from './github.gif';
+import kagglePng from './kaggle.png';
+import linkedinGif from './linkedin.gif';
+import aiLogo from './ai logo.png';
 
 const fontFamily = 'Inter, Segoe UI, Arial, sans-serif';
 const navLinkStyle: React.CSSProperties = {
@@ -41,7 +45,7 @@ function App() {
       >
         <div
           style={{
-            fontSize: '2.2rem',
+            fontSize: 'var(--header-size)',
             fontWeight: 800,
             letterSpacing: 0.5,
             display: 'flex',
@@ -51,7 +55,7 @@ function App() {
             fontFamily,
           }}
         >
-          <span role="img" aria-label="robot">🤖</span> Ritesh
+          <img src={aiLogo} alt="AI Logo" style={{ width: 32, height: 32, objectFit: 'contain', verticalAlign: 'middle' }} /> Ritesh
         </div>
         <ul
           style={{
@@ -63,14 +67,14 @@ function App() {
             fontFamily,
           }}
         >
-          <li><a href="#home" style={navLinkStyle}>Home</a></li>
-          <li><a href="#about" style={navLinkStyle}>About</a></li>
-          <li><a href="#skills" style={navLinkStyle}>Skills</a></li>
-          <li><a href="#projects" style={navLinkStyle}>Projects</a></li>
-          <li style={{ marginRight: '3cm' }}><a href="#contact" style={navLinkStyle}>Contact</a></li>
+          <li><a href="#home" style={{...navLinkStyle, fontSize: 'var(--body-size)'}}>Home</a></li>
+          <li><a href="#about" style={{...navLinkStyle, fontSize: 'var(--body-size)'}}>About</a></li>
+          <li><a href="#skills" style={{...navLinkStyle, fontSize: 'var(--body-size)'}}>Skills</a></li>
+          <li><a href="#projects" style={{...navLinkStyle, fontSize: 'var(--body-size)'}}>Projects</a></li>
+          <li style={{ marginRight: '3cm' }}><a href="#contact" style={{...navLinkStyle, fontSize: 'var(--body-size)'}}>Contact</a></li>
         </ul>
       </nav>
-      <main style={{ marginTop: 64, position: 'relative', zIndex: 1, fontFamily }}>
+      <main className="container" style={{ marginTop: 64, position: 'relative', zIndex: 1, fontFamily }}>
         <section
           style={{
             minHeight: '90vh',
@@ -86,7 +90,7 @@ function App() {
           }}
         >
           <h1 style={{
-            fontSize: '2.7rem',
+            fontSize: 'var(--title-size)',
             fontWeight: 800,
             marginBottom: 10,
             color: '#222',
@@ -96,7 +100,7 @@ function App() {
             Hi, I'm Ritesh
           </h1>
           <p style={{
-            fontSize: '1.25rem',
+            fontSize: 'var(--h2-size)',
             marginBottom: 18,
             fontWeight: 500,
             color: '#222',
@@ -106,7 +110,7 @@ function App() {
           </p>
           <p style={{
             color: '#555',
-            fontSize: '1.08rem',
+            fontSize: 'var(--body-size)',
             marginBottom: 32,
             maxWidth: 700,
             marginLeft: 'auto',
@@ -115,20 +119,29 @@ function App() {
           }}>
             Specializing in building <b>intelligent systems</b> with <b>AI, ML, and data science</b>. Transforming complex problems into elegant solutions.
           </p>
-          <div style={{ display: 'flex', gap: 32, justifyContent: 'center', marginBottom: 40 }}>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 24, marginBottom: 32, flexWrap: 'wrap' }}>
+            <a href="https://github.com/Riteshveer" target="_blank" rel="noopener noreferrer">
+              <img src={githubGif} alt="GitHub" style={{ width: 26, height: 26, borderRadius: '50%', objectFit: 'cover', boxShadow: '0 2px 8px #0001' }} />
+            </a>
+            <img src={kagglePng} alt="Kaggle" style={{ width: 26, height: 26, borderRadius: '50%', objectFit: 'cover', boxShadow: '0 2px 8px #0001' }} />
+            <a href="https://www.linkedin.com/in/ritesh-veer-39a30328b" target="_blank" rel="noopener noreferrer">
+              <img src={linkedinGif} alt="LinkedIn" style={{ width: 26, height: 26, borderRadius: '50%', objectFit: 'cover', boxShadow: '0 2px 8px #0001' }} />
+            </a>
+          </div>
+          <div style={{ display: 'flex', gap: 16, justifyContent: 'center', marginBottom: 40, flexWrap: 'wrap' }}>
             <a
               href="#projects"
               style={{
-                padding: '16px 36px',
+                padding: '12px 28px',
                 borderRadius: 40,
-                fontSize: '1.08rem',
+                fontSize: 'var(--body-size)',
                 fontWeight: 600,
                 border: 'none',
                 cursor: 'pointer',
                 background: '#222',
                 color: '#fff',
                 textDecoration: 'none',
-                marginRight: 20,
+                marginRight: 12,
                 boxShadow: '0 4px 16px 0 #0002',
                 transition: 'background 0.2s, color 0.2s',
                 fontFamily,
@@ -141,9 +154,9 @@ function App() {
             <a
               href="#"
               style={{
-                padding: '16px 36px',
+                padding: '12px 28px',
                 borderRadius: 40,
-                fontSize: '1.08rem',
+                fontSize: 'var(--body-size)',
                 fontWeight: 600,
                 border: '2px solid #00bcd4',
                 background: 'transparent',

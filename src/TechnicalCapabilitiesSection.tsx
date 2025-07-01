@@ -50,7 +50,7 @@ const capabilities = [
 const fontFamily = 'Inter, Segoe UI, Arial, sans-serif';
 
 const TechnicalCapabilitiesSection = () => (
-  <section id="capabilities" style={{
+  <section id="capabilities" className="container" style={{
     width: '100%',
     padding: '60px 0 30px 0',
     background: 'transparent',
@@ -60,7 +60,7 @@ const TechnicalCapabilitiesSection = () => (
     fontFamily,
   }}>
     <h2 style={{
-      fontSize: '2.5rem',
+      fontSize: 'var(--h2-size)',
       fontWeight: 800,
       color: '#232b38',
       textAlign: 'center',
@@ -72,7 +72,7 @@ const TechnicalCapabilitiesSection = () => (
     </h2>
     <div style={{
       color: '#555',
-      fontSize: '1.08rem',
+      fontSize: 'var(--caption-size)',
       textAlign: 'center',
       marginBottom: 40,
       maxWidth: 700,
@@ -83,8 +83,8 @@ const TechnicalCapabilitiesSection = () => (
     </div>
     <div style={{
       display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fit, minmax(480px, 1fr))',
-      gap: 44,
+      gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+      gap: 24,
       width: '100%',
       maxWidth: 1140,
       fontFamily,
@@ -95,11 +95,11 @@ const TechnicalCapabilitiesSection = () => (
           borderRadius: 16,
           boxShadow: '0 2px 16px 0 #0001',
           border: '1.5px solid #e5e7ef',
-          padding: '36px 36px 28px 36px',
+          padding: '24px 18px 18px 18px',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'flex-start',
-          minHeight: 260,
+          minHeight: 220,
           fontFamily,
         }}>
           <div style={{
@@ -114,14 +114,14 @@ const TechnicalCapabilitiesSection = () => (
             marginBottom: 18,
             fontFamily,
           }}>{cap.icon}</div>
-          <div style={{ fontWeight: 700, fontSize: '1.08rem', color: '#232b38', marginBottom: 4, fontFamily }}>{cap.title}</div>
-          <div style={{ color: '#555', fontSize: '1rem', marginBottom: 16, fontFamily }}>{cap.desc}</div>
+          <div style={{ fontWeight: 700, fontSize: 'var(--header-size)', color: '#232b38', marginBottom: 4, fontFamily }}>{cap.title}</div>
+          <div style={{ color: '#555', fontSize: 'var(--body-size)', marginBottom: 16, fontFamily }}>{cap.desc}</div>
           <ul style={{
             listStyle: 'none',
             padding: 0,
             margin: 0,
             color: '#232b38',
-            fontSize: '1rem',
+            fontSize: 'var(--body-size)',
             fontWeight: 400,
             fontFamily,
           }}>
