@@ -9,7 +9,7 @@ import Footer from './Footer';
 import githubGif from './github.gif';
 import kagglePng from './kaggle.png';
 import linkedinGif from './linkedin.gif';
-import aiLogo from './ai logo.png';
+import robotLogo from './robot.png';
 
 const fontFamily = 'Inter, Segoe UI, Arial, sans-serif';
 const navLinkStyle: React.CSSProperties = {
@@ -88,7 +88,7 @@ function App() {
             fontFamily,
           }}
         >
-          <img src={aiLogo} alt="AI Logo" style={{ width: 32, height: 32, objectFit: 'contain', verticalAlign: 'middle' }} /> Ritesh
+          <img src={robotLogo} alt="Robot Logo" style={{ width: 32, height: 32, objectFit: 'contain', verticalAlign: 'middle' }} /> Ritesh
         </div>
         <ul
           className="desktop-nav"
@@ -153,13 +153,108 @@ function App() {
           }}>
             Specializing in building <b>intelligent systems</b> with <b>AI, ML, and data science</b>. Transforming complex problems into elegant solutions.
           </p>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 24, marginBottom: 32, flexWrap: 'wrap' }}>
-            <a href="https://github.com/Riteshveer" target="_blank" rel="noopener noreferrer">
-              <img src={githubGif} alt="GitHub" style={{ width: 26, height: 26, borderRadius: '50%', objectFit: 'cover', boxShadow: '0 2px 8px #0001' }} />
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 12, marginBottom: 32, flexWrap: 'wrap' }}>
+            <a
+              href="https://github.com/Riteshveer"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 4,
+                border: '2px solid #8ac2fe',
+                borderRadius: 2,
+                padding: '1px 8px',
+                background: 'transparent',
+                color: '#4bb0fa',
+                fontWeight: 600,
+                fontSize: '10px',
+                height: 18,
+                minHeight: 18,
+                textDecoration: 'none',
+                transition: 'background 0.2s, color 0.2s',
+                boxShadow: 'none',
+                lineHeight: '10px',
+              }}
+              onMouseOver={e => {
+                e.currentTarget.style.background = '#8ac2fe';
+                e.currentTarget.style.color = '#fff';
+              }}
+              onMouseOut={e => {
+                e.currentTarget.style.background = 'transparent';
+                e.currentTarget.style.color = '#4bb0fa';
+              }}
+            >
+              <img src={githubGif} alt="GitHub" style={{ width: 10, height: 10, marginRight: 4, display: 'inline-block', verticalAlign: 'middle' }} />
+              GITHUB
             </a>
-            <img src={kagglePng} alt="Kaggle" style={{ width: 26, height: 26, borderRadius: '50%', objectFit: 'cover', boxShadow: '0 2px 8px #0001' }} />
-            <a href="https://www.linkedin.com/in/ritesh-veer-39a30328b" target="_blank" rel="noopener noreferrer">
-              <img src={linkedinGif} alt="LinkedIn" style={{ width: 26, height: 26, borderRadius: '50%', objectFit: 'cover', boxShadow: '0 2px 8px #0001' }} />
+            <a
+              href="https://www.kaggle.com/riteshveer"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 4,
+                border: '2px solid #8ac2fe',
+                borderRadius: 2,
+                padding: '1px 8px',
+                background: 'transparent',
+                color: '#4bb0fa',
+                fontWeight: 600,
+                fontSize: '10px',
+                height: 18,
+                minHeight: 18,
+                textDecoration: 'none',
+                transition: 'background 0.2s, color 0.2s',
+                boxShadow: 'none',
+                lineHeight: '10px',
+              }}
+              onMouseOver={e => {
+                e.currentTarget.style.background = '#8ac2fe';
+                e.currentTarget.style.color = '#fff';
+              }}
+              onMouseOut={e => {
+                e.currentTarget.style.background = 'transparent';
+                e.currentTarget.style.color = '#4bb0fa';
+              }}
+            >
+              <img src={kagglePng} alt="Kaggle" style={{ width: 10, height: 10, marginRight: 4, display: 'inline-block', verticalAlign: 'middle' }} />
+              KAGGLE
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ritesh-veer-39a30328b"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 4,
+                border: '2px solid #8ac2fe',
+                borderRadius: 2,
+                padding: '1px 8px',
+                background: 'transparent',
+                color: '#4bb0fa',
+                fontWeight: 600,
+                fontSize: '10px',
+                height: 18,
+                minHeight: 18,
+                textDecoration: 'none',
+                transition: 'background 0.2s, color 0.2s',
+                boxShadow: 'none',
+                lineHeight: '10px',
+              }}
+              onMouseOver={e => {
+                e.currentTarget.style.background = '#8ac2fe';
+                e.currentTarget.style.color = '#fff';
+              }}
+              onMouseOut={e => {
+                e.currentTarget.style.background = 'transparent';
+                e.currentTarget.style.color = '#4bb0fa';
+              }}
+            >
+              <img src={linkedinGif} alt="LinkedIn" style={{ width: 10, height: 10, marginRight: 4, display: 'inline-block', verticalAlign: 'middle' }} />
+              LINKEDIN
             </a>
           </div>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', marginBottom: 40, flexWrap: 'wrap' }}>
@@ -168,7 +263,7 @@ function App() {
               style={{
                 padding: '12px 28px',
                 borderRadius: 40,
-                fontSize: 'var(--body-size)',
+                fontSize: '16px',
                 fontWeight: 600,
                 border: 'none',
                 cursor: 'pointer',
@@ -190,7 +285,7 @@ function App() {
               style={{
                 padding: '12px 28px',
                 borderRadius: 40,
-                fontSize: 'var(--body-size)',
+                fontSize: '16px',
                 fontWeight: 600,
                 border: '2px solid #00bcd4',
                 background: 'transparent',

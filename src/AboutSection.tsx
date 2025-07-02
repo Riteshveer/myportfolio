@@ -67,7 +67,7 @@ const AboutSection = () => {
           </p>
         </div>
       </div>
-      <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '48px', marginTop: 8, width: '100%' }}>
+      <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '2cm', marginTop: '-1cm', width: '100%' }}>
         <div style={{ textAlign: 'center' }}>
           <div style={{ fontWeight: 700, fontSize: 'var(--header-size)', color: '#222' }}>04+</div>
           <div style={{ color: '#888', fontSize: 'var(--caption-size)' }}>Hackathon</div>
@@ -81,7 +81,7 @@ const AboutSection = () => {
           <div style={{ color: '#888', fontSize: 'var(--caption-size)' }}>Technology</div>
         </div>
       </div>
-      <div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginTop: 8 }}>
+      <div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginTop: '1cm' }}>
         <a
           href="#contact"
           style={{

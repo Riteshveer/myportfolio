@@ -3,7 +3,7 @@ import React from 'react';
 const contactItems = [
   {
     icon: (
-      <svg width="28" height="28" fill="none" stroke="#8b5cf6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6 12 13 2 6"/></svg>
+      <svg width="28" height="28" fill="none" stroke="#00bcd4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6 12 13 2 6"/></svg>
     ),
     label: 'Email',
     value: 'riteshveer0326@gmail.com',
@@ -11,7 +11,7 @@ const contactItems = [
   },
   {
     icon: (
-      <svg width="28" height="28" fill="none" stroke="#8b5cf6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+      <svg width="28" height="28" fill="none" stroke="#00bcd4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
     ),
     label: 'Location',
     value: 'Pune, India',
@@ -39,9 +39,9 @@ const ContactSection = () => (
           <div>
             <div style={{ fontWeight: 700, fontSize: 'var(--header-size)', color: '#222', marginBottom: 2 }}>{item.label}</div>
             {item.link ? (
-              <a href={item.link} style={{ color: '#8b5cf6', fontSize: 'var(--body-size)', textDecoration: 'none' }}>{item.value}</a>
+              <a href={item.link} style={{ color: '#00bcd4', fontSize: 'var(--body-size)', textDecoration: 'none' }}>{item.value}</a>
             ) : (
-              <div style={{ color: '#888', fontSize: 'var(--body-size)' }}>{item.value}</div>
+              <div style={{ color: '#00bcd4', fontSize: 'var(--body-size)' }}>{item.value}</div>
             )}
           </div>
         </div>

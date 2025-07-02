@@ -58,3 +58,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media (max-width: 600px) {
+  body {
+    font-family: 'Optima', Arial, sans-serif !important;
+    font-size: 15px !important;
+    padding: 0 4px !important;
+    background: #f8fafc;
+  }
+  h1 {
+    font-size: 22px !important;
+  }
+  h2 {
+    font-size: 18px !important;
+  }
+  h3, h4, h5, h6 {
+    font-size: 15px !important;
+  }
+  .container {
+    padding: 0 2px !important;
+    max-width: 100vw !important;
+  }
+  .about-avatar {
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 16px !important;
+  }
+  section, main, nav {
+    padding: 8px 0 !important;
+  }
+  button, a, .App-link {
+    font-size: 13px !important;
+    padding: 8px 12px !important;
+    border-radius: 8px !important;
+  }
+  .desktop-nav {
+    display: none !important;
+  }
+  .mobile-nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 -2px 12px #0001;
+    z-index: 100;
+  }
+  .mobile-nav a {
+    flex: 1;
+    text-align: center;
+    padding: 12px 0;
+    color: #00bcd4;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+  }
+}
