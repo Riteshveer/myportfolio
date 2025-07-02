@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import NeuralNetworkBackground from './NeuralNetworkBackground';
+import downArrow from './down-arrow.png';
 
 const skillsData = [
   {
@@ -83,12 +84,15 @@ const SkillsSection = () => {
                 cursor: 'pointer',
                 outline: 'none',
                 padding: 0,
-                marginLeft: 12,
+                marginLeft: '1cm',
                 fontSize: 20,
                 transform: openIndex === idx ? 'rotate(180deg)' : 'rotate(0deg)',
                 transition: 'transform 0.2s',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
               }} aria-label={openIndex === idx ? 'Collapse' : 'Expand'}>
-                ▼
+                <img src={downArrow} alt="Expand" style={{ width: 24, height: 24, transition: 'transform 0.2s', transform: openIndex === idx ? 'rotate(180deg)' : 'rotate(0deg)' }} />
               </button>
             </div>
             <div style={{ maxHeight: openIndex === idx ? 500 : 0, overflow: 'hidden', transition: 'max-height 0.5s cubic-bezier(0.4,0,0.2,1)', width: '100%', marginTop: openIndex === idx ? 18 : 0 }}>

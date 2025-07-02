@@ -15,7 +15,7 @@ const AboutSection = () => {
     }}>
       <h2 style={{ fontSize: 'var(--h2-size)', fontWeight: 700, marginBottom: 8, color: '#222' }}>About</h2>
       <div style={{ color: '#888', fontSize: 'var(--caption-size)', marginBottom: 32 }}>My Introduction</div>
-      <div style={{
+      <div className="about-main-row" style={{
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'flex-start',
@@ -50,7 +50,7 @@ const AboutSection = () => {
             className="about-avatar"
           />
         </div>
-        <div style={{
+        <div className="about-bio" style={{
           maxWidth: 540,
           color: '#444',
           fontSize: '18px',

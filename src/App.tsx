@@ -158,6 +158,7 @@ function App() {
               href="https://github.com/Riteshveer"
               target="_blank"
               rel="noopener noreferrer"
+              className="social-btn"
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -168,7 +169,7 @@ function App() {
                 background: 'transparent',
                 color: '#4bb0fa',
                 fontWeight: 600,
-                fontSize: '10px',
+                fontSize: '12px',
                 height: 18,
                 minHeight: 18,
                 textDecoration: 'none',
@@ -192,6 +193,7 @@ function App() {
               href="https://www.kaggle.com/riteshveer"
               target="_blank"
               rel="noopener noreferrer"
+              className="social-btn"
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -202,7 +204,7 @@ function App() {
                 background: 'transparent',
                 color: '#4bb0fa',
                 fontWeight: 600,
-                fontSize: '10px',
+                fontSize: '12px',
                 height: 18,
                 minHeight: 18,
                 textDecoration: 'none',
@@ -226,6 +228,7 @@ function App() {
               href="https://www.linkedin.com/in/ritesh-veer-39a30328b"
               target="_blank"
               rel="noopener noreferrer"
+              className="social-btn"
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -236,7 +239,7 @@ function App() {
                 background: 'transparent',
                 color: '#4bb0fa',
                 fontWeight: 600,
-                fontSize: '10px',
+                fontSize: '12px',
                 height: 18,
                 minHeight: 18,
                 textDecoration: 'none',
@@ -260,6 +263,7 @@ function App() {
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', marginBottom: 40, flexWrap: 'wrap' }}>
             <a
               href="#projects"
+              className="main-btn"
               style={{
                 padding: '12px 28px',
                 borderRadius: 40,
@@ -282,6 +286,7 @@ function App() {
             </a>
             <a
               href="#"
+              className="main-btn"
               style={{
                 padding: '12px 28px',
                 borderRadius: 40,
