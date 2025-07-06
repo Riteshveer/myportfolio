@@ -153,111 +153,84 @@ function App() {
           }}>
             Specializing in building <b>intelligent systems</b> with <b>AI, ML, and data science</b>. Transforming complex problems into elegant solutions.
           </p>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 12, marginBottom: 32, flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 16, marginBottom: 32, flexWrap: 'wrap' }}>
             <a
               href="https://github.com/Riteshveer"
               target="_blank"
               rel="noopener noreferrer"
-              className="social-btn"
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: 4,
-                border: '2px solid #8ac2fe',
-                borderRadius: 2,
-                padding: '1px 8px',
+                justifyContent: 'center',
+                width: 40,
+                height: 40,
+                borderRadius: '50%',
                 background: 'transparent',
-                color: '#4bb0fa',
-                fontWeight: 600,
-                fontSize: '12px',
-                height: 18,
-                minHeight: 18,
                 textDecoration: 'none',
-                transition: 'background 0.2s, color 0.2s',
-                boxShadow: 'none',
-                lineHeight: '10px',
+                transition: 'transform 0.2s, background 0.2s',
               }}
               onMouseOver={e => {
-                e.currentTarget.style.background = '#8ac2fe';
-                e.currentTarget.style.color = '#fff';
+                e.currentTarget.style.transform = 'scale(1.1)';
+                e.currentTarget.style.background = 'rgba(138, 194, 254, 0.1)';
               }}
               onMouseOut={e => {
+                e.currentTarget.style.transform = 'scale(1)';
                 e.currentTarget.style.background = 'transparent';
-                e.currentTarget.style.color = '#4bb0fa';
               }}
             >
-              <img src={githubGif} alt="GitHub" style={{ width: 10, height: 10, marginRight: 4, display: 'inline-block', verticalAlign: 'middle' }} />
-              GITHUB
+              <img src={githubGif} alt="GitHub" style={{ width: 24, height: 24 }} />
             </a>
             <a
               href="https://www.kaggle.com/riteshveer"
               target="_blank"
               rel="noopener noreferrer"
-              className="social-btn"
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: 4,
-                border: '2px solid #8ac2fe',
-                borderRadius: 2,
-                padding: '1px 8px',
+                justifyContent: 'center',
+                width: 40,
+                height: 40,
+                borderRadius: '50%',
                 background: 'transparent',
-                color: '#4bb0fa',
-                fontWeight: 600,
-                fontSize: '12px',
-                height: 18,
-                minHeight: 18,
                 textDecoration: 'none',
-                transition: 'background 0.2s, color 0.2s',
-                boxShadow: 'none',
-                lineHeight: '10px',
+                transition: 'transform 0.2s, background 0.2s',
               }}
               onMouseOver={e => {
-                e.currentTarget.style.background = '#8ac2fe';
-                e.currentTarget.style.color = '#fff';
+                e.currentTarget.style.transform = 'scale(1.1)';
+                e.currentTarget.style.background = 'rgba(138, 194, 254, 0.1)';
               }}
               onMouseOut={e => {
+                e.currentTarget.style.transform = 'scale(1)';
                 e.currentTarget.style.background = 'transparent';
-                e.currentTarget.style.color = '#4bb0fa';
               }}
             >
-              <img src={kagglePng} alt="Kaggle" style={{ width: 10, height: 10, marginRight: 4, display: 'inline-block', verticalAlign: 'middle' }} />
-              KAGGLE
+              <img src={kagglePng} alt="Kaggle" style={{ width: 24, height: 24 }} />
             </a>
             <a
               href="https://www.linkedin.com/in/ritesh-veer-39a30328b"
               target="_blank"
               rel="noopener noreferrer"
-              className="social-btn"
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: 4,
-                border: '2px solid #8ac2fe',
-                borderRadius: 2,
-                padding: '1px 8px',
+                justifyContent: 'center',
+                width: 40,
+                height: 40,
+                borderRadius: '50%',
                 background: 'transparent',
-                color: '#4bb0fa',
-                fontWeight: 600,
-                fontSize: '12px',
-                height: 18,
-                minHeight: 18,
                 textDecoration: 'none',
-                transition: 'background 0.2s, color 0.2s',
-                boxShadow: 'none',
-                lineHeight: '10px',
+                transition: 'transform 0.2s, background 0.2s',
               }}
               onMouseOver={e => {
-                e.currentTarget.style.background = '#8ac2fe';
-                e.currentTarget.style.color = '#fff';
+                e.currentTarget.style.transform = 'scale(1.1)';
+                e.currentTarget.style.background = 'rgba(138, 194, 254, 0.1)';
               }}
               onMouseOut={e => {
+                e.currentTarget.style.transform = 'scale(1)';
                 e.currentTarget.style.background = 'transparent';
-                e.currentTarget.style.color = '#4bb0fa';
               }}
             >
-              <img src={linkedinGif} alt="LinkedIn" style={{ width: 10, height: 10, marginRight: 4, display: 'inline-block', verticalAlign: 'middle' }} />
-              LINKEDIN
+              <img src={linkedinGif} alt="LinkedIn" style={{ width: 24, height: 24 }} />
             </a>
           </div>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', marginBottom: 40, flexWrap: 'wrap' }}>

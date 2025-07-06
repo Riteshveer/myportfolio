@@ -75,6 +75,10 @@ code {
     padding: 0 4px !important;
     background: #f8fafc;
   }
+  h1, h2, h3, h4, h5, h6,
+  .large-title, .title-1, .title-2, .title-3, .title-4 {
+    font-family: 'Mango Grotesque', Arial, Helvetica, sans-serif !important;
+  }
   h1 {
     font-size: 22px !important;
   }

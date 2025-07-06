@@ -11,7 +11,7 @@ const footerLinks = [
 const socialLinks = [
   { icon: <img src={githubGif} alt="GitHub" style={{ width: 26, height: 26 }} />, href: 'https://github.com/Riteshveer' },
   { icon: <img src={linkedinGif} alt="LinkedIn" style={{ width: 26, height: 26 }} />, href: 'https://www.linkedin.com/in/ritesh-veer-39a30328b' },
-  { icon: <img src={kagglePng} alt="Kaggle" style={{ width: 26, height: 26 }} />, href: '#' },
+  { icon: <img src={kagglePng} alt="Kaggle" style={{ width: 26, height: 26 }} />, href: 'https://www.kaggle.com/riteshveer' },
 ];
 
 const Footer = () => (
